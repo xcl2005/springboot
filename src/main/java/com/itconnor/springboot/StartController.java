@@ -9,6 +9,6 @@ public class StartController {
 
     @RequestMapping("/springboot")
     public String startSpringBoot() {
-        return "Welcome to the world of Spring Boot!！！！！";
+        return "Welcome to the world of Spring Boot！";
     }
 }
