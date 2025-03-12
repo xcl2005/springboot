@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentServiceIml implements StudentService {
     @Resource
-    private static StudentRepository StudentRepository;
+    private StudentRepository studentRepository;
 
     @Override
-    public  Student getStudenById(long id) {
-        return StudentRepository.findById(id).orElseThrow(RuntimeException::new);
+    public  Student getStudentById(long id) {
+        return studentRepository.findById(id).orElseThrow(RuntimeException::new);
     }
 }
